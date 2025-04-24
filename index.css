@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+ 
+}
+
+
 :root{
     --azul-claro: #8AD2E2; 
     --azul-medio: #22A1BC;
@@ -6,8 +13,9 @@
     --laranja-secundaria: #F58220;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
+body{ 
+    font-family: 'Poppins', sans-serif;
+   /* font-family: Arial, Helvetica, sans-serif;*/
     font-size: 15px;
     background-color: #F5F9FC;
     padding-top: 70px;
@@ -16,7 +24,7 @@ body{
 }
 
 header{
-    background-color: var(--azul-escuro);
+    background-color: rgb(132, 132, 218);
     width: 100%;
     position: fixed;
     top: 0;
@@ -56,7 +64,7 @@ header{
 }
 
 main{
-   padding-top: 250px;
+   padding-top: 20px;
    margin: 0 auto;
    max-width: 1200px;
    padding-left: 20px;
@@ -66,14 +74,14 @@ main{
 }
 
 img.actividade{
-    max-width: 800px;
+    max-width: 850px;
 }
 
 main section .titulo{
     background-color: #ffffff;
     border-left: 5px solid #FDB827;
     padding: 20px;
-    margin-top: 90px;
+    margin-top: 20px;
 }
 
 .menu-toggle{
@@ -84,6 +92,114 @@ main section .titulo{
     padding: 5px;
     border: none;
 }
+
+/*CSS para pagina de CONTACTOS*/
+.titulo-contactos{
+    margin-top: 5px;
+    background-color: #ffffff;
+    border-left: 5px solid #FDB827;
+    padding: 20px;
+}
+
+/* Slider */
+#slider {
+    max-width: 850px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.slide.ativo {
+    display: block;
+}
+
+/* Botão modo escuro */
+#modo-btn {
+    margin-left: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Modo escuro */
+body.dark {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark header {
+    background-color: #121212;
+}
+
+body.dark .navbar a:hover {
+    color: white;
+    background-color: #333;
+}
+
+
+.footer {
+    background-color: var(--azul-escuro);
+    color: white;
+    padding: 30px 20px;
+    margin-top: 40px;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .footer-section {
+    flex: 1 1 250px;
+  }
+  
+  .footer-title {
+    margin-bottom: 10px;
+    color: var(--amarelo-vibrante);
+    font-size: 1.5em;
+  }
+  
+  .footer-subtitle {
+    color: var(--amarelo-vibrante);
+    margin-bottom: 5px;
+  }
+  
+  .footer-text {
+    margin: 5px 0;
+    font-size: 0.95em;
+  }
+  
+  .footer-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #ffffff33;
+    padding-top: 10px;
+    font-size: 0.9em;
+  }
+  
 
 @media (max-width: 768px){
 
@@ -133,7 +249,7 @@ main section .titulo{
     }
 
     img.actividade{
-        max-width: 500px;
+        max-width: 450px;
         margin-right: 0;
     }
 }
