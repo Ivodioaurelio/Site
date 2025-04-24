@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+ 
+}
+
+
+:root{
+    --azul-claro: #8AD2E2; 
+    --azul-medio: #22A1BC;
+    --azul-escuro: #032B43;
+    --amarelo-vibrante: #FDB827;
+    --laranja-secundaria: #F58220;
+}
+
+body{ 
+    font-family: 'Poppins', sans-serif;
+   /* font-family: Arial, Helvetica, sans-serif;*/
+    font-size: 15px;
+    background-color: #F5F9FC;
+    padding-top: 70px;
+    margin: 0;
+    line-height: 25px;
+}
+
+header{
+    background-color: rgb(132, 132, 218);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+.navbar ul{
+   display: flex;
+   justify-content: flex-end;
+   flex-wrap: wrap;
+   gap: 5px;
+   padding: 0;
+   margin: 0;
+   
+}
+
+.navbar li{
+   list-style: none;
+   margin: 0;
+   padding: 10px 10px;
+}
+
+.navbar a{
+   text-decoration: none;
+   color: white;
+   padding: 8px 12px;
+   transition: 0.3s ease;
+}
+
+.navbar a:hover{
+   color: rgb(32, 32, 90);
+   background-color: white; 
+   border-radius: 20px;
+   
+}
+
+main{
+   padding-top: 20px;
+   margin: 0 auto;
+   max-width: 1200px;
+   padding-left: 20px;
+   padding-right: 20px;
+   box-sizing: border-box;
+
+}
+
+img.actividade{
+    max-width: 850px;
+}
+
+main section .titulo{
+    background-color: #ffffff;
+    border-left: 5px solid #FDB827;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.menu-toggle{
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+}
+
+/*CSS para pagina de CONTACTOS*/
+.titulo-contactos{
+    margin-top: 5px;
+    background-color: #ffffff;
+    border-left: 5px solid #FDB827;
+    padding: 20px;
+}
+
+/* Slider */
+#slider {
+    max-width: 850px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.slide.ativo {
+    display: block;
+}
+
+/* Botão modo escuro */
+#modo-btn {
+    margin-left: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Modo escuro */
+body.dark {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark header {
+    background-color: #121212;
+}
+
+body.dark .navbar a:hover {
+    color: white;
+    background-color: #333;
+}
+
+
+.footer {
+    background-color: var(--azul-escuro);
+    color: white;
+    padding: 30px 20px;
+    margin-top: 40px;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .footer-section {
+    flex: 1 1 250px;
+  }
+  
+  .footer-title {
+    margin-bottom: 10px;
+    color: var(--amarelo-vibrante);
+    font-size: 1.5em;
+  }
+  
+  .footer-subtitle {
+    color: var(--amarelo-vibrante);
+    margin-bottom: 5px;
+  }
+  
+  .footer-text {
+    margin: 5px 0;
+    font-size: 0.95em;
+  }
+  
+  .footer-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #ffffff33;
+    padding-top: 10px;
+    font-size: 0.9em;
+  }
+  
+
+@media (max-width: 768px){
+
+   .menu-toggle{
+        display: block;
+    }
+    .navbar ul{
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 5px;
+        display: none;
+        background-color: var(--azul-escuro);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 250px;
+        padding: 10px;
+        border-radius: 10px 0 10px 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 2);
+        transform: translateY(-10px);
+        transition: all 0.4s ease;
+
+       
+    }
+
+    .navbar ul.show{
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+
+    main{
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+    section h2{
+        font-size: 1.4em;
+    }
+
+    section p{
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    img.actividade{
+        max-width: 450px;
+        margin-right: 0;
+    }
+}
